@@ -1,4 +1,4 @@
-# MIST4610 Project 1
+# MIST4610 Project 1 Group 7
 
 Group Members: Justus Nour, Jackson Boyer, Rong Xin Hu, Trey Trotti, Sophie Yoo
 
