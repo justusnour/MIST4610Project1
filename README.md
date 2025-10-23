@@ -38,15 +38,15 @@ Table: Appointment
 | Column Name | Description                                               | Data Type | Size | Format     | Key?    |
 | ----------- | --------------------------------------------------------- | --------- | ---- | ---------- | ------- |
 | appID       | Unique number indicating the patient’s appointment number | INT       |      |            | **Yes** |
-| app_date    | Date of the appointment                                   | DATE      |      | YYYY/MM/DD |         |
-| app_time    | Time of the appointment                                   | TIME      |      | HH:MM:SS   |         |
-| app_reason  | Reason for the appointment                                | TEXT      | 45   |            |         |
+| appt_date    | Date of the appointment                                   | DATE      |      | YYYY/MM/DD |         |
+| appt_time    | Time of the appointment                                   | TIME      |      | HH:MM:SS   |         |
+| appt_reason  | Reason for the appointment                                | TEXT      | 45   |            |         |
 
 Table: Bill
 | Column Name | Description                                        | Data Type | Size | Format     | Key?    |
 | ----------- | -------------------------------------------------- | --------- | ---- | ---------- | ------- |
 | billID      | Unique number indicating the patient’s bill number | INT       |      |            | **Yes** |
-| bill_amount | Amount to be paid                                  | DECIMAL   | 45   |            |         |
+| bill_amount | Amount to be paid                                  | DECIMAL   | (10,2)   |            |         |
 | bill_date   | The date the patient was billed                    | DATE      |      | YYYY/MM/DD |         |
 | bill_status | Status of the bill (paid or not)                   | TEXT      | 45   |            |         |
 
@@ -101,7 +101,7 @@ Table: Patient
 | patient_dob       | Date of birth                         | DATE      |      | YYYY/MM/DD    |         |
 | patient_gender    | Gender                                | TEXT      | 45   |               |         |
 | patient_phone     | Phone number                          | TEXT      | 10   | (XXX)XXX-XXXX |         |
-| patient_address   | Address                               | TEXT      | 45   |               |         |
+| patient_addy   | Address                               | TEXT      | 45   |               |         |
 | emergency_contact | Emergency contact name                | TEXT      | 45   |               |         |
 | patient_bloodtype | Blood type                            | TEXT      | 45   |               |         |
 
@@ -118,7 +118,7 @@ Table: Room
 | Column Name       | Description                                | Data Type | Size | Format | Key?    |
 | ----------------- | ------------------------------------------ | --------- | ---- | ------ | ------- |
 | roomID            | Unique number to identify the room         | INT       |      |        | **Yes** |
-| room_number       | Room number                                | TEXT      | 45   |        |         |
+| room_num       | Room number                                | TEXT      | 45   |        |         |
 | room_type         | Type of room                               | TEXT      | 45   |        |         |
 | room_availability | Room availability status (vacant/occupied) | TEXT      | 45   |        |         |
 
