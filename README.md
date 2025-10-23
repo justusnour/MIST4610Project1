@@ -34,10 +34,12 @@ Relationships:
 
 Data Dictionary
 
+The following Data Dictionary defines the attributes, data types, and key designations for each entity in our hospital database schema.
+
 Table: Appointment
 | Column Name | Description                                               | Data Type | Size | Format     | Key?    |
 | ----------- | --------------------------------------------------------- | --------- | ---- | ---------- | ------- |
-| appID       | Unique number indicating the patient’s appointment number | INT       |      |            | **Yes** |
+| apptID       | Unique number indicating the patient’s appointment number | INT       |      |            | **Yes** |
 | appt_date    | Date of the appointment                                   | DATE      |      | YYYY/MM/DD |         |
 | appt_time    | Time of the appointment                                   | TIME      |      | HH:MM:SS   |         |
 | appt_reason  | Reason for the appointment                                | TEXT      | 45   |            |         |
@@ -64,7 +66,7 @@ Table: Doctor
 | doctorID      | Unique number to identify the doctor | INT       |      |               | **Yes** |
 | doc_firstname | First name of the doctor             | TEXT      | 45   |               |         |
 | doc_lastname  | Last name of the doctor              | TEXT      | 45   |               |         |
-| doc_specialty | Doctor’s specialty                   | TEXT      | 45   |               |         |
+| doc_speciality | Doctor’s specialty                   | TEXT      | 45   |               |         |
 | doc_phone     | Doctor’s phone number                | TEXT      | 10   | (XXX)XXX-XXXX |         |
 | doc_email     | Doctor’s email                       | TEXT      | 45   |               |         |
 
@@ -79,7 +81,7 @@ Table: Insurance
 Table: Lab_Test
 | Column Name | Description                            | Data Type | Size | Format     | Key?    |
 | ----------- | -------------------------------------- | --------- | ---- | ---------- | ------- |
-| testID      | Unique number to identify the lab test | INT       |      |            | **Yes** |
+| labtestID      | Unique number to identify the lab test | INT       |      |            | **Yes** |
 | test_type   | Type of lab test                       | TEXT      | 45   |            |         |
 | test_result | Result of the lab test                 | TEXT      | 45   |            |         |
 | test_date   | Date of the lab test                   | DATE      |      | YYYY/MM/DD |         |
