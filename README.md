@@ -12,7 +12,7 @@ Entities
 4. Room
 5. Appointment
 6. Med_Record
-7.Prescription
+7. Prescription
 8. Lab_Test
 9. Bill
 10. Insurance
