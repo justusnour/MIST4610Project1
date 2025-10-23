@@ -22,6 +22,11 @@ Entities
 8. Lab_Test
 9. Bill
 10. Insurance
+<img width="619" height="626" alt="Screenshot 2025-10-23 at 2 35 38 PM" src="https://github.com/user-attachments/assets/b9c066d5-f1b9-444a-9d1c-57ac4c06ad78" />
+
+
+
+
 
 Relationships:
 | #  | Relationship                            | Type                  | Identifying / Non-Identifying | Description                                                    |
