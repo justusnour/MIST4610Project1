@@ -124,34 +124,31 @@ The following Data Dictionary defines the attributes, data types, and key design
 | room_availability | Room availability status (vacant/occupied) | TEXT      | 45   |        |         |
 
 
+## SQL Queries
 
-## Description and Justification of your Queries:
-
-  SQL Queries
-
-Simple Queries
+### Simple Queries
 Query 1 shows how many patients the hospital has for each blood type, excluding those with type B or B+. The results are grouped by blood type and ordered by the number of patients in descending order. 
-
+<img width="408" height="245" alt="Screenshot 2025-10-24 at 10 39 08 AM" src="https://github.com/user-attachments/assets/ed16816a-5d03-4294-b19b-38995f22c3b6" />
 
 
 This query is useful for medical staff to understand the distribution of blood types among patients, which can help in planning for blood supply, managing inventory, and ensuring that the most needed blood types are available for transfusions and emergencies.
 
 Query 2 lists each patient’s ID, name, and the number of medical records they have.
+<img width="374" height="270" alt="Screenshot 2025-10-24 at 10 39 47 AM" src="https://github.com/user-attachments/assets/6a7d356b-01af-47ff-b6af-d974482598da" />
 
 
 Query 2  allows the hospital to identify which patients have the most medical history or frequent visits. This helps staff recognize patients who may need more ongoing care, follow-ups, or specialized attention. Over time, this information could support improved patient tracking systems or wellness programs for those with frequent hospital visits.
 
 
 Query 3 lists the first name, last name, and drug name for each patient who is prescribed medication that must be taken once daily.
+<img width="432" height="268" alt="Screenshot 2025-10-24 at 10 40 03 AM" src="https://github.com/user-attachments/assets/f2893c89-5c2e-4039-857a-f1d11a45047e" />
 
 
 This query helps hospital staff quickly see which patients are on daily medications, making it easier to keep track of their treatment routines. This allows doctors and nurses to provide timely reminders, check-ins, and support to help patients stay consistent with their prescriptions, improving their overall care and recovery experience.
 
 
-
-
-
 Query 4 lists the ID, first name, last name, and department ID of all doctors who work in the Cardiology department.
+<img width="400" height="304" alt="Screenshot 2025-10-24 at 10 40 22 AM" src="https://github.com/user-attachments/assets/7c491aca-a47e-4a31-b3ca-42f3abc3bfdd" />
 
 
 This query helps hospital staff quickly see which doctors are part of the Cardiology team. By having this list, it becomes easier to plan schedules, organize department meetings, and make sure that patients who need heart-related care are assigned to the right specialists. It also helps improve coordination within the department, ensuring that doctors can work together efficiently to provide the best possible care for their patients.
