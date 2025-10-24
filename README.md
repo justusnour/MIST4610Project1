@@ -1,7 +1,7 @@
 # MIST4610 Project 1 Group 7
 
 ## Group Members: 
-Justus Nour, [Jackson Boyer](https://github.com/Jackson9812), [Rong Xin Hu](https://github.com/RongX02), [Trey Trotti](https://github.com/treytrotti), [Sophie Yoo](https://github.com/sophieyoo)
+[Justus Nour](https://github.com/justusnour), [Jackson Boyer](https://github.com/Jackson9812), [Rong Xin Hu](https://github.com/RongX02), [Trey Trotti](https://github.com/treytrotti), [Sophie Yoo](https://github.com/sophieyoo)
 
 
 ## Scenario Description: 
