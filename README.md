@@ -1,6 +1,7 @@
 # MIST4610 Project 1 Group 7
 
-## Group Members: Justus Nour, Jackson Boyer, Rong Xin Hu, Trey Trotti, Sophie Yoo
+## Group Members: 
+Justus Nour, Jackson Boyer, Rong Xin Hu, Trey Trotti, Sophie Yoo
 
 http://github.com/sophieyoo/MIST4610Project1
 
@@ -8,7 +9,8 @@ https://github.com/Jackson9812/MIST4610Project1
 
 https://github.com/RongX02/MIST-4610-Project-1
 
-## Scenario Description: Our team designed a hospital management system that tracks patient care, appointments, billing, and staff operations. The database supports key functions like scheduling, prescriptions, lab tests, and insurance processing. It helps management monitor patient flow, department performance, and financial outcomes.
+## Scenario Description: 
+Our team designed a hospital management system that tracks patient care, appointments, billing, and staff operations. The database supports key functions like scheduling, prescriptions, lab tests, and insurance processing. It helps management monitor patient flow, department performance, and financial outcomes.
 
 ## Data Model Explanation: 
 Our data model represents how a real hospital functions day to day, capturing the connections between patients, doctors, departments, and the many services that keep a hospital running smoothly. At the core of the model is the Patient entity, since nearly every process in the hospital revolves around the patient. Each patient can have multiple medical records that track their diagnoses and treatments, and they can also make many appointments with different doctors. Because an appointment depends on both the patient and the doctor, it forms a many-to-many relationship, showing how patients and doctors interact throughout the care process. Every appointment results in one Bill, which records the cost and payment details, and since each patient’s bill is tied to their insurance provider, there’s a one-to-many relationship between Insurance and Patient, showing that one insurance plan can cover multiple individuals.
