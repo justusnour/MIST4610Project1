@@ -41,7 +41,7 @@ The following Data Dictionary defines the attributes, data types, and key design
 | apptID       | Unique number indicating the patient’s appointment number | INT       |      |            | **Yes** |
 | appt_date    | Date of the appointment                                   | DATE      |      | YYYY/MM/DD |         |
 | appt_time    | Time of the appointment                                   | TIME      |      | HH:MM:SS   |         |
-| appt_reason  | Reason for the appointment                                | TEXT      | 45   |            |         |
+| appt_reason  | Reason for the appointment                                | VARCHAR      | 45   |            |         |
 
 ### Table: Bill
 | Column Name | Description                                        | Data Type | Size | Format     | Key?    |
@@ -49,79 +49,79 @@ The following Data Dictionary defines the attributes, data types, and key design
 | billID      | Unique number indicating the patient’s bill number | INT       |      |            | **Yes** |
 | bill_amount | Amount to be paid                                  | DECIMAL   | (10,2)   |            |         |
 | bill_date   | The date the patient was billed                    | DATE      |      | YYYY/MM/DD |         |
-| bill_status | Status of the bill (paid or not)                   | TEXT      | 45   |            |         |
+| bill_status | Status of the bill (paid or not)                   | VARCHAR      | 45   |            |         |
 
 ### Table: Department
 | Column Name  | Description                              | Data Type | Size | Format | Key?    |
 | ------------ | ---------------------------------------- | --------- | ---- | ------ | ------- |
 | departmentID | Unique number identifying the department | INT       |      |        | **Yes** |
-| dept_name    | Name of the department                   | TEXT      | 45   |        |         |
-| dept_floor   | Floor of the department                  | TEXT      | 45   |        |         |
-| dept_head    | Name of the department head              | TEXT      | 45   |        |         |
+| dept_name    | Name of the department                   | VARCHAR      | 45   |        |         |
+| dept_floor   | Floor of the department                  | VARCHAR      | 45   |        |         |
+| dept_head    | Name of the department head              | VARCHAR      | 45   |        |         |
 
 ### Table: Doctor
 | Column Name   | Description                          | Data Type | Size | Format        | Key?    |
 | ------------- | ------------------------------------ | --------- | ---- | ------------- | ------- |
 | doctorID      | Unique number to identify the doctor | INT       |      |               | **Yes** |
-| doc_firstname | First name of the doctor             | TEXT      | 45   |               |         |
-| doc_lastname  | Last name of the doctor              | TEXT      | 45   |               |         |
-| doc_speciality | Doctor’s specialty                   | TEXT      | 45   |               |         |
-| doc_phone     | Doctor’s phone number                | TEXT      | 10   | (XXX)XXX-XXXX |         |
-| doc_email     | Doctor’s email                       | TEXT      | 45   |               |         |
+| doc_firstname | First name of the doctor             | VARCHAR      | 45   |               |         |
+| doc_lastname  | Last name of the doctor              | VARCHAR      | 45   |               |         |
+| doc_speciality | Doctor’s specialty                   | VARCHAR      | 45   |               |         |
+| doc_phone     | Doctor’s phone number                | VARCHAR      | 10   | (XXX)XXX-XXXX |         |
+| doc_email     | Doctor’s email                       | VARCHAR      | 45   |               |         |
 
 ### Table: Insurance
 | Column Name      | Description                         | Data Type | Size | Format | Key?    |
 | ---------------- | ----------------------------------- | --------- | ---- | ------ | ------- |
 | insuranceID      | Unique number to identify insurance | INT       |      |        | **Yes** |
-| provider         | Insurance provider name             | TEXT      | 45   |        |         |
-| ins_policynumber | Insurance policy number             | TEXT      | 45   |        |         |
-| ins_coverage     | Insurance coverage type             | TEXT      | 45   |        |         |
+| provider         | Insurance provider name             | VARCHAR      | 45   |        |         |
+| ins_policynumber | Insurance policy number             | VARCHAR      | 45   |        |         |
+| ins_coverage     | Insurance coverage type             | VARCHAR      | 45   |        |         |
 
 ### Table: Lab_Test
 | Column Name | Description                            | Data Type | Size | Format     | Key?    |
 | ----------- | -------------------------------------- | --------- | ---- | ---------- | ------- |
 | labtestID      | Unique number to identify the lab test | INT       |      |            | **Yes** |
-| test_type   | Type of lab test                       | TEXT      | 45   |            |         |
-| test_result | Result of the lab test                 | TEXT      | 45   |            |         |
+| test_type   | Type of lab test                       | VARCHAR      | 45   |            |         |
+| test_result | Result of the lab test                 | VARCHAR      | 45   |            |         |
 | test_date   | Date of the lab test                   | DATE      |      | YYYY/MM/DD |         |
 
 ### Table: Med_Record
 | Column Name     | Description                               | Data Type | Size | Format     | Key?    |
 | --------------- | ----------------------------------------- | --------- | ---- | ---------- | ------- |
 | recordID        | Unique number used to identify the record | INT       |      |            | **Yes** |
-| med_diagnosis   | The diagnosis of the patient              | TEXT      | 45   |            |         |
-| med_treatment   | The suggested treatment for the patient   | TEXT      | 45   |            |         |
+| med_diagnosis   | The diagnosis of the patient              | VARCHAR      | 45   |            |         |
+| med_treatment   | The suggested treatment for the patient   | VARCHAR      | 45   |            |         |
 | med_record_date | Date the record was created               | DATE      |      | YYYY/MM/DD |         |
 
 ### Table: Patient
 | Column Name       | Description                           | Data Type | Size | Format        | Key?    |
 | ----------------- | ------------------------------------- | --------- | ---- | ------------- | ------- |
 | patientID         | Unique number to identify the patient | INT       |      |               | **Yes** |
-| first_name        | First name of the patient             | TEXT      | 45   |               |         |
-| last_name         | Last name of the patient              | TEXT      | 45   |               |         |
+| first_name        | First name of the patient             | VARCHAR      | 45   |               |         |
+| last_name         | Last name of the patient              | VARCHAR      | 45   |               |         |
 | patient_dob       | Date of birth                         | DATE      |      | YYYY/MM/DD    |         |
-| patient_gender    | Gender                                | TEXT      | 45   |               |         |
-| patient_phone     | Phone number                          | TEXT      | 10   | (XXX)XXX-XXXX |         |
-| patient_addy   | Address                               | TEXT      | 45   |               |         |
-| emergency_contact | Emergency contact name                | TEXT      | 45   |               |         |
-| patient_bloodtype | Blood type                            | TEXT      | 45   |               |         |
+| patient_gender    | Gender                                | VARCHAR      | 45   |               |         |
+| patient_phone     | Phone number                          | VARCHAR      | 10   | (XXX)XXX-XXXX |         |
+| patient_addy   | Address                               | VARCHAR      | 45   |               |         |
+| emergency_contact | Emergency contact name                | VARCHAR      | 45   |               |         |
+| patient_bloodtype | Blood type                            | VARCHAR      | 45   |               |         |
 
 ### Table: Prescription
 | Column Name       | Description                                     | Data Type | Size | Format | Key?    |
 | ----------------- | ----------------------------------------------- | --------- | ---- | ------ | ------- |
 | prescriptionID    | Unique number used to identify the prescription | INT       |      |        | **Yes** |
-| drug_name         | Name of the drug                                | TEXT      | 45   |        |         |
-| drug_dosage       | Correct dosage of the drug                      | TEXT      | 45   |        |         |
-| drug_frequency    | How often the drug should be taken              | TEXT      | 45   |        |         |
-| drug_instructions | Instructions on how to take the drug            | TEXT      | 45   |        |         |
+| drug_name         | Name of the drug                                | VARCHAR      | 45   |        |         |
+| drug_dosage       | Correct dosage of the drug                      | VARCHAR      | 45   |        |         |
+| drug_frequency    | How often the drug should be taken              | VARCHAR      | 45   |        |         |
+| drug_instructions | Instructions on how to take the drug            | VARCHAR      | 45   |        |         |
 
 ### Table: Room
 | Column Name       | Description                                | Data Type | Size | Format | Key?    |
 | ----------------- | ------------------------------------------ | --------- | ---- | ------ | ------- |
 | roomID            | Unique number to identify the room         | INT       |      |        | **Yes** |
-| room_num       | Room number                                | TEXT      | 45   |        |         |
-| room_type         | Type of room                               | TEXT      | 45   |        |         |
-| room_availability | Room availability status (vacant/occupied) | TEXT      | 45   |        |         |
+| room_num       | Room number                                | VARCHAR      | 45   |        |         |
+| room_type         | Type of room                               | VARCHAR      | 45   |        |         |
+| room_availability | Room availability status (vacant/occupied) | VARCHAR      | 45   |        |         |
 
 
 ## SQL Queries
