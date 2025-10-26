@@ -194,6 +194,13 @@ Query 10: Query 10 lists the doctors name, their patient count, and the total nu
 
 Query 10 shows which doctors write the most prescriptions per patient on average.
 
+**Database information:
+Name of the database: ns_Group7 
+
+Additional information: Each query written above is marked in the database using a stored procedure written by me which can be called using this  format: CALL JN_Q1;
+
+To call the others, replace Q1 with Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9 OR Q10.
+
 
 
 
