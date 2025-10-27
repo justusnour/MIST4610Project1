@@ -5,7 +5,7 @@
 
 2. [Jackson Boyer](https://github.com/Jackson9812),
    
-3.[Rong Xin Hu](https://github.com/RongX02), 
+3. [Rong Xin Hu](https://github.com/RongX02), 
 
 4. [Trey Trotti](https://github.com/treytrotti),
 
