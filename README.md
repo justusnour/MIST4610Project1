@@ -124,6 +124,139 @@ The following Data Dictionary defines the attributes, data types, and key design
 | room_availability | Room availability status (vacant/occupied) | VARCHAR      | 45   |        |         |
 
 
+Database Table: 
+
+
+Feature
+Query 1
+Query 2
+Query 3
+Query 4
+Query 5
+Query 6
+Query 7
+Query 8
+Query 9
+Query 10
+multiple table join
+
+
+X
+X
+X
+X
+X
+X
+X
+X
+X
+subquery
+
+
+
+
+
+
+X
+
+
+
+
+
+
+
+
+
+
+
+
+GROUP BY
+X
+
+
+
+
+
+
+
+
+X
+
+
+X
+X
+X
+GROUP BY with HAVING
+
+
+
+
+
+
+
+
+X
+
+
+
+
+
+
+
+
+
+
+multi-condition WHERE
+
+
+
+
+X
+X
+X
+X
+X
+
+
+
+
+
+
+built-in functions
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+REGEXP
+
+
+
+
+X
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## SQL Queries
 
 ### Simple Queries
